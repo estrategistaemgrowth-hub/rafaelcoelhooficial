@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Cursos, imersões, palestras e conteúdos do Pastor Rafael Coelho para uma vida e uma liderança com propósito."
+    />
+    <meta name="theme-color" content="#07301d" />
+    <title>Pastor Rafael Coelho | Cursos, imersões e palestras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307301d'/%3E%3Cpath d='M18 13h17c9 0 15 5 15 13 0 6-3 10-9 12l11 13H39L29 40h-1v11H18V13Zm10 9v10h6c4 0 6-2 6-5s-2-5-6-5h-6Z' fill='%23fbf9f5'/%3E%3C/svg%3E"
+    />
+    <style>
+      :root {
+        --green: #07301d;
+        --green-deep: #041d12;
+        --wheat: #eee6cc;
+        --parchment: #e5d6ae;
+        --earth: #bd962f;
+        --straw: #2b1a11;
+        --warm-white: #fbf9f5;
+        --ink: #16241c;
+        --line: rgba(238, 230, 204, 0.18);
+        --sans: "Rockford Sans", "Avenir Next", "Century Gothic", Arial, sans-serif;
+        --script: "Luxurious Script", "Segoe Script", cursive;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--warm-white);
+        background:
+          radial-gradient(circle at 20% 15%, rgba(189, 150, 47, 0.18), transparent 34rem),
+          radial-gradient(circle at 90% 82%, rgba(229, 214, 174, 0.12), transparent 30rem),
+          var(--green-deep);
+        font-family: var(--sans);
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        content: "";
+        opacity: 0.22;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");
+        pointer-events: none;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .site-shell {
+        width: min(100%, 47.5rem);
+        margin-inline: auto;
+        overflow: hidden;
+        background: var(--green);
+        box-shadow: 0 1.75rem 6rem rgba(0, 0, 0, 0.48);
+      }
+
+      .hero {
+        position: relative;
+        min-height: min(52rem, 100svh);
+        display: grid;
+        align-items: end;
+        overflow: hidden;
+        isolation: isolate;
+        background: var(--green-deep);
+      }
+
+      .hero__photo,
+      .hero::after {
+        position: absolute;
+        inset: 0;
+      }
+
+      .hero__photo {
+        z-index: -2;
+        height: 100%;
+        object-fit: cover;
+        object-position: 58% center;
+        filter: brightness(0.72) saturate(0.86) contrast(1.04);
+        transform: scale(1.015);
+      }
+
+      .hero::after {
+        z-index: -1;
+        content: "";
+        background:
+          linear-gradient(180deg, rgba(4, 29, 18, 0.38) 0%, rgba(4, 29, 18, 0.28) 34%, rgba(4, 29, 18, 0.64) 72%, #07301d 98%),
+          radial-gradient(circle at 50% 40%, rgba(4, 29, 18, 0.04) 0%, rgba(4, 29, 18, 0.46) 84%);
+      }
+
+      .hero__logo {
+        position: absolute;
+        top: clamp(1.5rem, 6vw, 3rem);
+        left: 50%;
+        width: clamp(8rem, 30vw, 11rem);
+        transform: translateX(-50%);
+      }
+
+      .hero__content {
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        padding: 11rem clamp(1.35rem, 6vw, 3.75rem) 2.75rem;
+        text-align: center;
+      }
+
+      .hero__content::before {
+        position: absolute;
+        z-index: -1;
+        inset: 8.4rem clamp(0.8rem, 3vw, 2.1rem) 1.25rem;
+        border: 1px solid rgba(238, 230, 204, 0.12);
+        border-radius: 1.5rem;
+        background: linear-gradient(180deg, rgba(4, 29, 18, 0.12), rgba(4, 29, 18, 0.5));
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.16);
+        content: "";
+        backdrop-filter: blur(1.8px);
+      }
+
+      .eyebrow {
+        margin: 0 0 0.8rem;
+        color: var(--parchment);
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 15ch;
+        margin: 0 auto 1rem;
+        font-family: var(--sans);
+        font-size: clamp(2.25rem, 7vw, 3.8rem);
+        font-weight: 500;
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+        text-wrap: balance;
+        text-shadow: 0 0.18rem 1.3rem rgba(0, 0, 0, 0.58);
+      }
+
+      h1 span,
+      h1 em {
+        display: block;
+      }
+
+      h1 em {
+        margin-top: 0.25rem;
+        font-family: var(--script);
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.82;
+        letter-spacing: 0;
+      }
+
+      .hero__intro {
+        max-width: 35rem;
+        margin: 0 auto 1.55rem;
+        color: rgba(251, 249, 245, 0.82);
+        font-size: clamp(1rem, 2.5vw, 1.1rem);
+        line-height: 1.65;
+        text-shadow: 0 0.12rem 0.85rem rgba(0, 0, 0, 0.7);
+        text-wrap: pretty;
+      }
+
+      .hero__cta {
+        display: inline-flex;
+        min-height: 3rem;
+        align-items: center;
+        gap: 0.65rem;
+        padding: 0.75rem 1.1rem;
+        border: 1px solid rgba(238, 230, 204, 0.36);
+        border-radius: 99rem;
+        color: var(--wheat);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color 180ms ease, border-color 180ms ease;
+      }
+
+      .hero__cta:hover,
+      .hero__cta:focus-visible {
+        border-color: var(--parchment);
+        background: rgba(238, 230, 204, 0.1);
+      }
+
+      .hero__cta svg {
+        width: 1rem;
+        transition: transform 180ms ease;
+      }
+
+      .hero__cta:hover svg {
+        transform: translateY(0.18rem);
+      }
+
+      .links {
+        padding: 3.5rem clamp(1rem, 4vw, 2rem) 4rem;
+      }
+
+      .section-heading {
+        padding-inline: clamp(0.35rem, 2vw, 1rem);
+        margin-bottom: 2rem;
+      }
+
+      .section-heading h2 {
+        max-width: 14ch;
+        margin-bottom: 0.7rem;
+        font-family: var(--sans);
+        font-size: clamp(2rem, 7vw, 3.35rem);
+        font-weight: 500;
+        line-height: 1.02;
+        letter-spacing: -0.05em;
+        text-wrap: balance;
+      }
+
+      .script-accent {
+        display: block;
+        font-family: var(--script);
+        font-size: 1.28em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.78;
+        letter-spacing: 0;
+      }
+
+      .section-heading p:last-child {
+        max-width: 34rem;
+        margin-bottom: 0;
+        color: rgba(251, 249, 245, 0.68);
+      }
+
+      .card-list {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .journey-card {
+        position: relative;
+        min-height: 14.5rem;
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(8rem, 0.9fr);
+        overflow: hidden;
+        border: 1px solid rgba(238, 230, 204, 0.34);
+        border-radius: 1.55rem;
+        background: linear-gradient(145deg, #fffdfa 0%, var(--warm-white) 72%);
+        color: var(--ink);
+        text-decoration: none;
+        box-shadow:
+          0 1.3rem 3.2rem rgba(0, 0, 0, 0.2),
+          0 0.15rem 0 rgba(255, 255, 255, 0.35) inset;
+        transition:
+          transform 360ms cubic-bezier(0.2, 0.75, 0.25, 1),
+          border-color 240ms ease,
+          box-shadow 360ms ease;
+      }
+
+      .journey-card::after {
+        position: absolute;
+        inset: 0.55rem;
+        z-index: 2;
+        border: 1px solid rgba(7, 48, 29, 0.1);
+        border-radius: 1.08rem;
+        content: "";
+        pointer-events: none;
+      }
+
+      .journey-card:focus-visible {
+        transform: translateY(-0.35rem);
+        border-color: var(--earth);
+        box-shadow: 0 1.65rem 3.8rem rgba(0, 0, 0, 0.28);
+      }
+
+      .journey-card:nth-child(even) {
+        grid-template-columns: minmax(8rem, 0.9fr) minmax(0, 1.1fr);
+        background: linear-gradient(145deg, #eadfbe 0%, var(--parchment) 78%);
+      }
+
+      .journey-card:nth-child(even) .card__media {
+        order: -1;
+      }
+
+      .card__body {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: clamp(1.15rem, 4vw, 2rem);
+        transition: transform 360ms cubic-bezier(0.2, 0.75, 0.25, 1);
+      }
+
+      .card__body h3 {
+        margin-bottom: 0.65rem;
+        font-family: var(--sans);
+        font-size: clamp(1.35rem, 4.5vw, 1.85rem);
+        font-weight: 600;
+        line-height: 1.08;
+        letter-spacing: -0.045em;
+        text-wrap: balance;
+      }
+
+      .card__body p {
+        margin-bottom: 1.25rem;
+        color: rgba(22, 36, 28, 0.76);
+        font-size: clamp(0.92rem, 2.3vw, 1rem);
+        line-height: 1.45;
+        text-wrap: balance;
+      }
+
+      .card__action {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-bottom: 1px solid currentColor;
+        color: var(--green);
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        line-height: 1.8;
+        text-transform: uppercase;
+      }
+
+      .card__action svg {
+        width: 1rem;
+        transition: transform 180ms ease;
+      }
+
+      .card__media {
+        position: relative;
+        min-width: 0;
+        min-height: 100%;
+        overflow: hidden;
+        background: var(--green-deep);
+      }
+
+      .card__media img {
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.92) contrast(1.04);
+        transition: transform 650ms cubic-bezier(0.2, 0.65, 0.25, 1);
+      }
+
+      .card__media::after {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(4, 29, 18, 0.02) 28%, rgba(4, 29, 18, 0.88) 100%);
+        content: "";
+        pointer-events: none;
+      }
+
+      .card__media-label {
+        position: absolute;
+        right: clamp(1.2rem, 4vw, 1.8rem);
+        bottom: clamp(1.25rem, 4vw, 1.8rem);
+        left: clamp(1.2rem, 4vw, 1.8rem);
+        z-index: 2;
+        color: var(--warm-white);
+        font-size: clamp(1.1rem, 3.5vw, 1.45rem);
+        font-weight: 650;
+        letter-spacing: -0.025em;
+        line-height: 1;
+        text-wrap: balance;
+        transition: transform 360ms cubic-bezier(0.2, 0.75, 0.25, 1);
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .journey-card:hover {
+          transform: translateY(-0.5rem) scale(1.004);
+          border-color: rgba(189, 150, 47, 0.78);
+          box-shadow: 0 1.85rem 4.2rem rgba(0, 0, 0, 0.3);
+        }
+
+        .journey-card:hover .card__body {
+          transform: translateX(0.28rem);
+        }
+
+        .journey-card:nth-child(even):hover .card__body {
+          transform: translateX(-0.28rem);
+        }
+
+        .journey-card:hover .card__media img {
+          transform: scale(1.065);
+        }
+
+        .journey-card:hover .card__media-label {
+          transform: translateY(-0.28rem);
+        }
+
+        .journey-card:hover .card__action svg {
+          transform: translateX(0.32rem);
+        }
+      }
+
+      .journey-card--event .card__media img {
+        object-position: 54% 45%;
+      }
+
+      .journey-card--course .card__media img {
+        object-position: 46% center;
+      }
+
+      .journey-card--online .card__media img {
+        object-position: 66% center;
+      }
+
+      .journey-card--leaders .card__media img {
+        object-position: 63% center;
+      }
+
+      .journey-card--corporate .card__media img {
+        object-position: 48% center;
+      }
+
+      .contact {
+        position: relative;
+        padding: 4.5rem clamp(1.35rem, 6vw, 4rem);
+        overflow: hidden;
+        background: var(--wheat);
+        color: var(--green);
+        text-align: center;
+      }
+
+      .contact::before {
+        position: absolute;
+        inset: auto -5rem -8rem auto;
+        width: 18rem;
+        aspect-ratio: 1;
+        border: 1px solid rgba(7, 48, 29, 0.15);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .contact h2 {
+        max-width: 14ch;
+        margin: 0 auto 0.9rem;
+        font-family: var(--sans);
+        font-size: clamp(2rem, 7vw, 3.45rem);
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.055em;
+        text-wrap: balance;
+      }
+
+      .contact > p {
+        max-width: 32rem;
+        margin: 0 auto 1.6rem;
+        color: rgba(7, 48, 29, 0.73);
+      }
+
+      .whatsapp-button {
+        display: inline-flex;
+        min-height: 3.4rem;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+        padding: 0.85rem 1.3rem;
+        border-radius: 99rem;
+        background: var(--green);
+        color: var(--warm-white);
+        font-weight: 800;
+        text-decoration: none;
+        transition: background-color 180ms ease, transform 180ms ease;
+      }
+
+      .whatsapp-button:hover,
+      .whatsapp-button:focus-visible {
+        background: var(--green-deep);
+        transform: translateY(-0.12rem);
+      }
+
+      .whatsapp-button svg {
+        width: 1.35rem;
+        height: 1.35rem;
+        flex: 0 0 auto;
+      }
+
+      .footer {
+        padding: 2.25rem 1.5rem 2.5rem;
+        border-top: 1px solid var(--line);
+        background: var(--green-deep);
+        text-align: center;
+      }
+
+      .footer__mark {
+        width: 8.5rem;
+        margin: 0 auto 1rem;
+        mix-blend-mode: screen;
+      }
+
+      .footer > p {
+        margin-bottom: 1.25rem;
+        color: rgba(251, 249, 245, 0.56);
+        font-size: 0.82rem;
+      }
+
+      .socials {
+        display: flex;
+        justify-content: center;
+        gap: 0.65rem;
+      }
+
+      .socials a {
+        width: 2.8rem;
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(238, 230, 204, 0.24);
+        border-radius: 50%;
+        color: var(--wheat);
+        transition: border-color 180ms ease, background-color 180ms ease;
+      }
+
+      .socials a:hover,
+      .socials a:focus-visible {
+        border-color: var(--earth);
+        background: rgba(189, 150, 47, 0.12);
+      }
+
+      .socials svg {
+        width: 1.18rem;
+        height: 1.18rem;
+      }
+
+      contact-dock {
+        position: fixed;
+        z-index: 20;
+        bottom: 1rem;
+        left: 50%;
+        width: min(calc(100% - 1.5rem), 29rem);
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%, 1rem);
+        transition: opacity 220ms ease, transform 220ms ease;
+      }
+
+      contact-dock.is-visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+      }
+
+      .human-contact {
+        display: grid;
+        grid-template-columns: 2.65rem minmax(0, 1fr) auto auto;
+        align-items: center;
+        gap: 0.7rem;
+        padding: 0.65rem;
+        border: 1px solid rgba(238, 230, 204, 0.28);
+        border-radius: 1rem;
+        background: rgba(4, 29, 18, 0.94);
+        box-shadow: 0 1rem 2.6rem rgba(0, 0, 0, 0.34);
+        backdrop-filter: blur(0.8rem);
+      }
+
+      .human-contact__avatar {
+        width: 2.65rem;
+        aspect-ratio: 1;
+        border: 1px solid rgba(238, 230, 204, 0.32);
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 58% center;
+      }
+
+      .human-contact__copy {
+        min-width: 0;
+      }
+
+      .human-contact__copy span,
+      .human-contact__copy strong {
+        display: block;
+      }
+
+      .human-contact__copy span {
+        margin-bottom: 0.05rem;
+        color: var(--parchment);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .human-contact__copy strong {
+        overflow: hidden;
+        color: var(--warm-white);
+        font-size: 0.88rem;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .human-contact__action {
+        min-height: 2.35rem;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.55rem 0.8rem;
+        border-radius: 99rem;
+        background: var(--parchment);
+        color: var(--green-deep);
+        font-size: 0.76rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .human-contact__close {
+        width: 2rem;
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        background: transparent;
+        color: rgba(251, 249, 245, 0.62);
+        cursor: pointer;
+        font: inherit;
+        font-size: 1.15rem;
+      }
+
+      .human-contact__close:hover,
+      .human-contact__close:focus-visible {
+        background: rgba(238, 230, 204, 0.1);
+        color: var(--warm-white);
+      }
+
+      .reveal,
+      .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--earth);
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 36rem) {
+        .hero {
+          min-height: 47rem;
+        }
+
+        .hero__photo {
+          object-position: 60% center;
+        }
+
+        .hero__content::before {
+          inset: 9.3rem 0.65rem 1rem;
+          border-radius: 1.25rem;
+        }
+
+        .journey-card,
+        .journey-card:nth-child(even) {
+          min-height: 31rem;
+          grid-template-columns: 1fr;
+          grid-template-rows: minmax(13rem, 46%) 1fr;
+        }
+
+        .journey-card:nth-child(even) .card__media {
+          order: 0;
+        }
+
+        .card__body {
+          order: 1;
+          justify-content: flex-start;
+          padding-top: 1.55rem;
+        }
+
+        .card__body p {
+          margin-bottom: 0.9rem;
+        }
+
+        .human-contact {
+          grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+          gap: 0.6rem;
+        }
+
+        .human-contact__avatar {
+          width: 2.5rem;
+        }
+
+        .human-contact__copy span {
+          display: none;
+        }
+
+        .human-contact__action {
+          padding-inline: 0.72rem;
+        }
+
+        .human-contact__close {
+          display: none;
+        }
+      }
+
+      @media (min-width: 48rem) {
+        body {
+          padding-block: 2rem;
+        }
+
+        .site-shell {
+          width: min(calc(100% - 4rem), 72rem);
+          border: 1px solid rgba(238, 230, 204, 0.14);
+          border-radius: 1.4rem;
+        }
+
+        .hero {
+          min-height: min(46rem, calc(100svh - 4rem));
+        }
+
+        .hero__logo {
+          top: 1.8rem;
+          width: 9.5rem;
+        }
+
+        .hero__content {
+          padding: 8.9rem 3.75rem 2rem;
+        }
+
+        .hero__content::before {
+          inset: 6.9rem 2rem 0.8rem;
+        }
+
+        .hero__content .eyebrow {
+          margin-bottom: 0.55rem;
+        }
+
+        .hero__content h1 {
+          max-width: 13ch;
+          margin-bottom: 0.8rem;
+          font-size: clamp(2.65rem, 5.8vw, 3.35rem);
+        }
+
+        .hero__content h1 em {
+          font-size: 1.12em;
+        }
+
+        .hero__intro {
+          max-width: 32rem;
+          margin-bottom: 1.15rem;
+          line-height: 1.5;
+        }
+
+        .section-heading {
+          max-width: 58rem;
+        }
+
+        .section-heading h2 {
+          max-width: 30ch;
+          font-size: clamp(2.8rem, 5vw, 3.6rem);
+        }
+
+        .section-heading .script-accent {
+          display: inline;
+          margin-left: 0.08em;
+        }
+
+        .journey-card,
+        .journey-card:nth-child(even) {
+          height: clamp(18rem, 30vw, 22rem);
+          min-height: 0;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <main class="site-shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero__photo"
+          src="assets/hero.webp"
+          alt="Pastor Rafael Coelho em seu estúdio, sorrindo diante do microfone"
+          fetchpriority="high"
+        />
+        <img class="hero__logo" src="assets/logo.png" alt="Rafael Coelho" />
+        <div class="hero__content">
+          <p class="eyebrow">Pastor · mentor · palestrante</p>
+          <h1 id="hero-title">
+            <span>Fé que forma líderes.</span>
+            <em>Princípios que sustentam jornadas.</em>
+          </h1>
+          <p class="hero__intro">
+            Conteúdos e experiências para quem deseja liderar com fundamento, viver com propósito e
+            construir um legado que permaneça.
+          </p>
+          <a class="hero__cta" href="#jornadas">
+            Escolha sua jornada
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="m7 10 5 5 5-5" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="links" id="jornadas" aria-labelledby="links-title">
+        <header class="section-heading reveal">
+          <p class="eyebrow">Cursos, imersões e experiências</p>
+          <h2 id="links-title">Escolha a jornada para o seu <em class="script-accent">momento</em></h2>
+          <p>Toque em uma opção para conhecer cada experiência e falar com a equipe.</p>
+        </header>
+
+        <div class="card-list">
+          <a
+            class="journey-card journey-card--event reveal"
+            href="https://wa.me/5547999085802?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20A%20Grande%20Jornada%20da%20Vida."
+            target="_blank"
+            rel="noopener"
+            aria-label="Conhecer A Grande Jornada da Vida pelo WhatsApp"
+          >
+            <div class="card__body">
+              <h3>A Grande Jornada da Vida</h3>
+              <p>Desperte, agradeça, combata e viva. Uma experiência que toca mente, coração e alma.</p>
+              <span class="card__action">
+                Quero conhecer
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+            <div class="card__media">
+              <img src="assets/grande-jornada.webp" alt="Pastor Rafael no palco de A Grande Jornada da Vida" loading="lazy" />
+              <span class="card__media-label">Evento</span>
+            </div>
+          </a>
+
+          <a
+            class="journey-card journey-card--course reveal"
+            href="https://wa.me/5547999085802?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Curso%20Jornada%20da%20Vida%20presencial."
+            target="_blank"
+            rel="noopener"
+            aria-label="Conhecer o Curso Jornada da Vida presencial pelo WhatsApp"
+          >
+            <div class="card__body">
+              <h3>Curso Jornada da Vida</h3>
+              <p>Sete encontros para restaurar perspectivas, fortalecer vínculos e viver com mais propósito.</p>
+              <span class="card__action">
+                Quero participar
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+            <div class="card__media">
+              <img src="assets/curso-presencial.webp" alt="Pastor Rafael conduzindo um encontro do Curso Jornada da Vida" loading="lazy" />
+              <span class="card__media-label">Presencial</span>
+            </div>
+          </a>
+
+          <a
+            class="journey-card journey-card--online reveal"
+            href="https://wa.me/5547999085802?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Curso%20Jornada%20da%20Vida%20On-line."
+            target="_blank"
+            rel="noopener"
+            aria-label="Conhecer o Curso Jornada da Vida On-line pelo WhatsApp"
+          >
+            <div class="card__body">
+              <h3>Curso Jornada da Vida On-line</h3>
+              <p>Leve essa jornada para onde você estiver e avance no seu ritmo, com propósito e esperança.</p>
+              <span class="card__action">
+                Quero começar
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+            <div class="card__media">
+              <img src="assets/curso-online.webp" alt="Pastor Rafael em seu estúdio durante uma gravação" loading="lazy" />
+              <span class="card__media-label">On-line</span>
+            </div>
+          </a>
+
+          <a
+            class="journey-card journey-card--leaders reveal"
+            href="https://wa.me/5547999085802?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20Imers%C3%A3o%20L%C3%ADderes%20que%20Sustentam."
+            target="_blank"
+            rel="noopener"
+            aria-label="Conhecer a Imersão Líderes que Sustentam pelo WhatsApp"
+          >
+            <div class="card__body">
+              <h3>Líderes que Sustentam</h3>
+              <p>Caráter, coragem e constância para construir equipes e legados que permanecem.</p>
+              <span class="card__action">
+                Quero liderar melhor
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+            <div class="card__media">
+              <img src="assets/imersao.webp" alt="Turma da Imersão Líderes que Sustentam" loading="lazy" />
+              <span class="card__media-label">Imersão</span>
+            </div>
+          </a>
+
+          <a
+            class="journey-card journey-card--corporate reveal"
+            href="https://wa.me/5547999085802?text=Ol%C3%A1%2C%20quero%20levar%20uma%20palestra%20do%20Pastor%20Rafael%20para%20minha%20empresa%20ou%20equipe."
+            target="_blank"
+            rel="noopener"
+            aria-label="Solicitar uma palestra corporativa pelo WhatsApp"
+          >
+            <div class="card__body">
+              <h3>Palestras Corporativas</h3>
+              <p>Mensagens para transformar a cultura, fortalecer relações e mover equipes à ação.</p>
+              <span class="card__action">
+                Levar para minha equipe
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+            <div class="card__media">
+              <img src="assets/palestras.webp" alt="Pastor Rafael apresentando uma palestra em um grande palco" loading="lazy" />
+              <span class="card__media-label">Empresas</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact reveal" aria-labelledby="contact-title">
+        <p class="eyebrow">Convites e informações</p>
+        <h2 id="contact-title">Vamos construir uma jornada <em class="script-accent">com propósito?</em></h2>
+        <p>Fale com a equipe para cursos, imersões, palestras e eventos.</p>
+        <a
+          class="whatsapp-button"
+          href="https://wa.me/message/2MLI3COKVZIAG1"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16.03 3A12.9 12.9 0 0 0 4.93 22.47L3 29l6.69-1.75A12.93 12.93 0 1 0 16.03 3Zm0 23.68a10.7 10.7 0 0 1-5.46-1.49l-.39-.23-3.97 1.04 1.06-3.87-.25-.4a10.72 10.72 0 1 1 9.01 4.95Z" />
+            <path d="M21.91 18.63c-.32-.16-1.88-.93-2.17-1.04-.29-.1-.5-.16-.71.16-.21.32-.82 1.04-1 1.25-.18.21-.37.24-.69.08-.32-.16-1.34-.49-2.56-1.58-.95-.84-1.58-1.88-1.77-2.2-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.36-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65 0 1.56 1.14 3.07 1.3 3.28.16.21 2.24 3.42 5.42 4.79.76.33 1.35.52 1.81.67.76.24 1.46.21 2.01.13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.38.19-1.51-.08-.13-.29-.21-.61-.37Z" />
+          </svg>
+          Falar no WhatsApp
+        </a>
+      </section>
+
+      <footer class="footer">
+        <img class="footer__mark" src="assets/logo.png" alt="Rafael Coelho" loading="lazy" />
+        <p>Formação de líderes e empresários com base bíblica.</p>
+        <nav class="socials" aria-label="Redes sociais">
+          <a href="https://www.instagram.com/rafael.jcoelho?igsh=MWVhc241Z2d2M21kbg==" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rafael-coelho-050b9a3a7" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.5 8.2H3.2V19h3.3V8.2ZM4.8 3A1.9 1.9 0 1 0 4.8 6.8 1.9 1.9 0 0 0 4.8 3Zm14.9 9.8c0-3.2-1.7-4.9-4-4.9-1.8 0-2.7 1-3.1 1.7V8.2H9.3V19h3.3v-5.4c0-1.4.3-2.8 2.1-2.8 1.8 0 1.8 1.7 1.8 2.9V19h3.3l-.1-6.2Z" />
+            </svg>
+          </a>
+          <a href="https://youtube.com/@rafael.jcoelho" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 12s0-3.2-.4-4.7a2.6 2.6 0 0 0-1.9-1.9C17.2 5 12 5 12 5s-5.2 0-6.7.4a2.6 2.6 0 0 0-1.9 1.9C3 8.8 3 12 3 12s0 3.2.4 4.7a2.6 2.6 0 0 0 1.9 1.9C6.8 19 12 19 12 19s5.2 0 6.7-.4a2.6 2.6 0 0 0 1.9-1.9c.4-1.5.4-4.7.4-4.7Z" />
+              <path d="m10 9 5 3-5 3V9Z" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+        </nav>
+      </footer>
+    </main>
+
+    <contact-dock></contact-dock>
+
+    <script>
+      class ContactDock extends HTMLElement {
+        connectedCallback() {
+          this.dismissed = false;
+          this.innerHTML = `
+            <aside class="human-contact" aria-label="Atendimento pelo WhatsApp">
+              <img class="human-contact__avatar" src="assets/hero.webp" alt="" />
+              <div class="human-contact__copy">
+                <span>Atendimento humano</span>
+                <strong>Oi! Posso ajudar?</strong>
+              </div>
+              <a
+                class="human-contact__action"
+                href="https://wa.me/message/2MLI3COKVZIAG1"
+                target="_blank"
+                rel="noopener"
+                aria-label="Conversar com a equipe pelo WhatsApp"
+              >Conversar</a>
+              <button class="human-contact__close" type="button" aria-label="Fechar atendimento">×</button>
+            </aside>
+          `;
+
+          const closeButton = this.querySelector(".human-contact__close");
+          closeButton.addEventListener("click", () => {
+            this.dismissed = true;
+            this.classList.remove("is-visible");
+          });
+
+          this.updateVisibility = () => {
+            if (this.dismissed) return;
+            const hero = document.querySelector(".hero");
+            const contact = document.querySelector(".contact");
+            const heroPassed = hero.getBoundingClientRect().bottom < window.innerHeight * 0.45;
+            const contactAhead = contact.getBoundingClientRect().top > window.innerHeight * 0.72;
+            this.classList.toggle("is-visible", heroPassed && contactAhead);
+          };
+
+          this.updateVisibility();
+          window.addEventListener("scroll", this.updateVisibility, { passive: true });
+          window.addEventListener("resize", this.updateVisibility);
+        }
+
+        disconnectedCallback() {
+          window.removeEventListener("scroll", this.updateVisibility);
+          window.removeEventListener("resize", this.updateVisibility);
+        }
+      }
+
+      customElements.define("contact-dock", ContactDock);
+    </script>
+
+  </body>
+</html>
